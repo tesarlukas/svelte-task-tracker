@@ -55,7 +55,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;

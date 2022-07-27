@@ -3,8 +3,9 @@
   export let params = {};
 </script>
 
-<h2>This is an About page</h2>
-<h2>Topic: {params.topic}</h2>
+<div>
+  This is the about page
 
-<button on:click={() => pop()}>Back</button>
-<button on:click={() => push('/')}>Go Home</button>
+  <button class="btn" on:click={() => pop()}>Back</button>
+  <button class="btn" on:click={() => push('/')}>Go Home</button>
+</div>

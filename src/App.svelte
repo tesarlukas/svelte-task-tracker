@@ -15,12 +15,13 @@
 
 <main>
   <nav>
-    <div class="logo">Task Tracker</div>
+    <div class="logo">TrackerApp</div>
     <div class="separator">|</div>
     <a href="#/">Home</a>
     <a href="#/About">About</a>
   </nav>
   <Router {routes} />
+  <footer>This is footer</footer>
 </main>
 
 <style>
