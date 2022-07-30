@@ -3,11 +3,13 @@
   import Home from './pages/Home.svelte';
   import About from './pages/About.svelte';
   import Error from './pages/Error.svelte';
+  import Focus from './pages/Focus.svelte';
 
   let routes = {
     '/': Home,
     '/about': About,
     '/about/:topic': About,
+    '/focus': Focus,
 
     '*': Error,
   };
@@ -18,7 +20,8 @@
     <div class="logo">TrackerApp</div>
     <div class="separator">|</div>
     <a href="#/">Home</a>
-    <a href="#/About">About</a>
+    <a href="#/about">About</a>
+    <a href="#/focus">Focus</a>
   </nav>
   <Router {routes} />
   <footer>This is footer</footer>

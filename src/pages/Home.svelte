@@ -4,24 +4,20 @@
 
   let tasks = [];
 
-  onMount(() => {
-    getTasks();
+  onMount(async () => {
+    tasks = await fetchTasks();
   });
 
-  const getTasks = async () => {
-    tasks = await fetchTasks();
+  const fetchTask = async (id) => {
+    const res = await fetch(`http://localhost:5001/tasks/${id}`);
+    const data = res.json();
+
+    return data;
   };
 
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:5001/tasks');
     const data = await res.json();
-
-    return data;
-  };
-
-  const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:5001/tasks/${id}`);
-    const data = res.json();
 
     return data;
   };

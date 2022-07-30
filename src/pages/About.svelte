@@ -1,11 +1,21 @@
 <script>
-  import { push, pop, replace } from 'svelte-spa-router';
+  import Buttons from '../components/Buttons.svelte';
   export let params = {};
 </script>
 
 <div>
-  This is the about page
-
-  <button class="btn" on:click={() => pop()}>Back</button>
-  <button class="btn" on:click={() => push('/')}>Go Home</button>
+  <div class="container">
+    <h1 class="text-center">About This Application</h1>
+    <p>This is an application serving as a simple Task Tracker application.</p>
+    <Buttons />
+  </div>
 </div>
+
+<style>
+  .container {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>

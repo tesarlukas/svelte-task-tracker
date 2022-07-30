@@ -1,5 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
+  import { TaskStore } from '../stores';
+
   export let task = {};
 
   const dispatch = new createEventDispatcher();
@@ -11,6 +13,11 @@
   const handleToggle = (taskId) => {
     dispatch('toggle-reminder', taskId);
   };
+
+  const handleFocus = (task) => {
+    TaskStore.set(task);
+    alert('Your focus has been set to this task');
+  };
 </script>
 
 <div
@@ -19,7 +26,18 @@
 >
   <h3>
     {task.text}
-    <span style="color:red" on:click={handleDelete(task.id)}>X</span>
+    <div>
+      <i
+        class="fas fa-check"
+        style="color: blue"
+        on:click={handleFocus(task)}
+      />
+      <i
+        class="fas fa-times"
+        style="color: red"
+        on:click={handleDelete(task.id)}
+      />
+    </div>
   </h3>
   <p>{task.day}</p>
 </div>
