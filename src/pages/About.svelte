@@ -1,5 +1,5 @@
 <script>
-  import Buttons from '../components/Buttons.svelte';
+  import NavButtons from '../components/Buttons.svelte';
   export let params = {};
 </script>
 
@@ -7,7 +7,7 @@
   <div class="container">
     <h1 class="text-center">About This Application</h1>
     <p>This is an application serving as a simple Task Tracker application.</p>
-    <Buttons />
+    <NavButtons />
   </div>
 </div>
 
