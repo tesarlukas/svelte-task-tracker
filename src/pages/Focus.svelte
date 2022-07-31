@@ -1,6 +1,5 @@
 <script>
   import NavButtons from '../components/NavButtons.svelte';
-  import Task from '../components/Task.svelte';
   import { TaskStore } from '../stores';
   // import { onDestroy, onMount } from 'svelte';
 

@@ -62,7 +62,6 @@
     });
 
     const data = await res.json();
-    console.log(data);
 
     // interestingly Svelte doesn't compile "find" method into "update the state" so it doesn't trigger rerender
     // const taskToUpdate = tasks.find((task) => task.id === taskId);
