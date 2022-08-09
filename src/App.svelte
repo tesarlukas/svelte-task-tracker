@@ -24,7 +24,7 @@
     <a href="#/focus">Focus</a>
   </nav>
   <Router {routes} />
-  <footer>This is footer</footer>
+  <footer>© 2022 Lukáš Tesař</footer>
 </main>
 
 <style>
