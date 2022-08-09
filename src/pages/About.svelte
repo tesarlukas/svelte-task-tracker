@@ -1,6 +1,5 @@
 <script>
   import NavButtons from '../components/NavButtons.svelte';
-  export let params = {};
 </script>
 
 <div>
