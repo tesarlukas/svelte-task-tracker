@@ -9,8 +9,6 @@
   const handleToggle = () => {
     dispatch('toggle-show');
   };
-  // this must be done through dispatch, because if you drill a prop through
-  // component and change it here, it wouldn't trigger rerender in upper component
 </script>
 
 <header>
