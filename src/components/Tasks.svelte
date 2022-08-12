@@ -1,6 +1,5 @@
 <script>
   import AddTask from './AddTask.svelte';
-  import Button from './Button.svelte';
   import Header from './Header.svelte';
   import Task from './Task.svelte';
 
