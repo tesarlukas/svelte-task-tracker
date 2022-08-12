@@ -63,9 +63,6 @@
 
     const data = await res.json();
 
-    // interestingly Svelte doesn't compile "find" method into "update the state" so it doesn't trigger rerender
-    // const taskToUpdate = tasks.find((task) => task.id === taskId);
-    // taskToUpdate.reminder = data.reminder;
     tasks = tasks.map((task) => {
       return task.id !== taskId ? task : { ...task, reminder: data.reminder };
     });
