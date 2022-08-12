@@ -1,16 +1,6 @@
 <script>
   import NavButtons from '../components/NavButtons.svelte';
   import { TaskStore } from '../stores';
-  // import { onDestroy, onMount } from 'svelte';
-
-  // let task = {};
-
-  // const unsubscribe = TaskStore.subscribe((data) => (task = data));
-
-  // onDestroy(() => {
-  //   console.log('destroyed');
-  //   unsubscribe();
-  // });
 </script>
 
 <div class="container">
