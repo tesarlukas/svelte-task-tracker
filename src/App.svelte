@@ -26,6 +26,3 @@
   <Router {routes} />
   <footer>© 2022 Lukáš Tesař</footer>
 </main>
-
-<style>
-</style>
